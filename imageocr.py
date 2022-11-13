@@ -6,7 +6,7 @@ from urllib.request import urlopen, Request
 
 def main(argv):
     # set User-Agent
-    useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    useragent = "imageocr/1.0"
 
     # 要讀取的檔案路徑
     filepath = ''
@@ -48,7 +48,8 @@ def main(argv):
             its = pytesseract.image_to_string(imgf, lang="chi_tra")
             print(its)
 
-    except Exception:
+    except Exception as ex:
+        raise ex
         sys.exit(1)
 
     # 程式正常結束

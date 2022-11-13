@@ -11,6 +11,7 @@ replit = "^3.2.4"
 Flask = "^2.2.0"
 urllib3 = "^1.26.12"
 pytesseract = ">=0.3.10"
+opencv-python = "^4.6.0"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"
