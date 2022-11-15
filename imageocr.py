@@ -20,6 +20,11 @@ def main(argv):
 
     # 初始化設定參數
     tessdataPath = './tessdata/'
+    # 建立目錄
+    try:
+        os.mkdir(tessdataPath)
+    except Exception:
+        pass
     os.environ["TESSDATA_PREFIX"] = tessdataPath
 
     # 嘗試取得輸入參數
