@@ -3,7 +3,13 @@
 
 ## Run Args
 ```
-python imageocr.py -f <imagePath | imgaeUrl>
+python imageocr.py -f <imagePath | imageUrl> -l <lang> -b <tesseract_bin>
+```
+<lang> 主要辨識語言 [參考](https://github.com/tesseract-ocr/tessdata_best/)
+```
+* eng: 英文
+* chi_tra: 繁體中文
+* chi_sim: 簡體中文
 ```
 
 ## License
