@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.tesseract_4
     pkgs.pipenv
     pkgs.python38Full
   ];
